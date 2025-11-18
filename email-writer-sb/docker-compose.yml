@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  email-writer-sb:
+    build: .
+    container_name: email-writer-sb
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./env/.env
